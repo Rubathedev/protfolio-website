@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-.font-primary{
+
+.font-primary {
     font-family: "Open Sans", serif;
 }
 
-.color-primary{
+.color-primary {
     color: #fd6e0a;
 }
-*{
+
+* {
     font-family: "Open Sans", serif;
     margin: 2px;
-    padding: px;
+    padding: 0px;
 }
-.btn{
+
+.btn {
     border-radius: 5px;
     background: rgb(253, 110, 10);
     color: white;
@@ -21,97 +24,293 @@
     font-size: 20px;
     border-radius: 5px;
     border: none;
-    
+
 }
-.btn:hover{
-   color: white;    
-   background-color: rgb(233,90,5) ;
+
+.btn:hover {
+    color: white;
+    background-color: rgb(233, 90, 5);
 }
+
 /* nav bar design */
-.header{
-  background: rgb(255, 248, 243);
-  
+.header {
+    background: rgb(255, 248, 243);
+    width: 1950px;
+    height: 837px;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0px 230px;
+    padding-top: 30px;
     align-items: center;
 }
-.logo{
+
+.logo {
     font-family: Open Sans;
-font-size: 35px;
-font-weight: 800;
-line-height: 61px;
-letter-spacing: 0%;
-text-align: left;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
 }
+
 ul {
     display: flex;
     align-items: center;
 }
+
 ul li {
     list-style: none;
+    margin-right: 50px;
 }
-.dark1{
-    color: rgb(30,30,30);
+
+.dark1 {
+    color: rgb(30, 30, 30);
 }
-.dark2{
-     color: #474747;
+
+.dark2 {
+    color: #474747;
 }
-.dark3{
-    color:rgb(117,117,117);
+
+.dark3 {
+    color: rgb(117, 117, 117);
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
-    margin-right: 59px;
+
     font-size: 20px;
-    
+
 }
-.banner{
+
+.banner {
     background: rgb(255, 248, 243);
-    background-image: url("../images/developer.png"),url("../images/header_bg.png");
+    background-image: url("../images/header_bg.png"), url("../images/developer.png");
     background-repeat: no-repeat;
-    background-position: 1% bottom, right bottom;   
-   display: flex;
-    justify-content: space-between;   
-   margin: 0px 0px 0px 80px;
-              
+    background-position: right bottom, left top;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 35px 0px 200px;
+
 }
+
 /* banner-container styles */
-.banner-container{
+.banner-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 356px;
-    width: 585px;
+
 
 }
- .intro{
-    font-size: 45px ;
+
+.intro {
+    font-size: 45px;
     font-weight: 700;
 }
-.head-name{
-font-size: 85px;
-font-weight: bold;
+
+.head-name {
+    font-size: 85px;
+    font-weight: bold;
 }
-.text{
-    width: 578px ;
+
+.text {
+    width: 578px;
 }
-.banner-btn{
-    
-}
-.banner-btn .btn{
+
+.banner-btn .btn {
     font-size: 18px;
-   text-align: center;
-   width: 200px;
-   height: 64px;
+    text-align: center;
+    width: 200px;
+    height: 64px;
+    margin-right: 15px;
 }
-.banner-btn .b2{
+
+.banner-btn .b2 {
     background-color: transparent;
     color: #fd6e0a;
     border: 1px solid #fd6e0a;
     width: 160px;
     height: 64px;
+    margin-left: 15px;
+}
+
+/* about section styling */
+.about-box {
+    width: 1140px;
+    height: 550px;
+    background-color: #FFF8F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+    border-radius: 10px;
+
+}
+
+.about-container {
+    width: 827px;
+    height: 288px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-container h3 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-container .description {
+    font: 18px;
+    text-align: center;
+
+}
+
+.about-container .info {
+    display: flex;
+    width: 782px;
+    height: 60px;
+    gap: 55px;
+}
+
+.about-container .info .about-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 161px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+/* skills section */
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+ .skill-container .skil-intro {
+    width: 909px;
+    height: 90px;
+    text-align: center;
+
+
+} 
+
+ .skills {
+    width: 267px;
+    height: 377px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 30px;
+   
+} 
+.skill-box{
+    width: 267px;
+height: 377px;
+border-radius: 5px;
+box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+
+}
+.skill-box .skill-description{
+    width: 204px;
+    height: 243px;
+    padding: 30px;
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.skill-box .skill-description h4 {
+    text-align: center;
+    color:black
+}
+.skill-p{
+    text-align: center;
+    width: 909px;
+}
+/* resume section */
+.resume .section-title{
+    text-align: center;
+    margin: 60px 0px 30px 0px;
+    font-size: 35px;
+font-weight: 700;
+}
+.resume-column .resume-column-title{
+     font-size: 30px;
+}
+.resume-container{
+    display: flex;
+    gap: 24px;
+    width: 1200px;
+    margin-left:480px ;
+}
+.experience .experience-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.experience-sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.experience-description, .experience-sub-title{
+    color: #757575;
+}
+.resume hr{
+    margin: 30px 5px;
+}
+
+.resume-download-cv{
+    margin-top: 50px;
+}
+.resume-btn{
+   margin:0px 980px;
+    
+}
+/* footer style */
+footer{
+    width: 100%;
+height: auto;
+    background: rgb(255, 248, 243);
+    margin-top: 130px;
+    display: flex;
+    gap:100px;
+   padding: 0 250px;
+}
+footer .footer-column{
+     width: 45%;
+     margin-top: 25px;
+     padding: 20px 0px;
+}
+footer input[type="text"],  footer input[type="email"], footer textarea{
+    height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 50%;
+    padding: 10px 20px;
+    margin:25px 0px 24px 0px;
+    border: none;
+}
+
+.footer-column .section-title{
+    margin-top: 55px;
+    font-size: 25px;
+font-weight: 700;
 }
