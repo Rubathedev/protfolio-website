@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .font-primary {
     font-family: "Open Sans", serif;
 }
@@ -35,7 +38,7 @@
 /* nav bar design */
 .header {
     background: rgb(255, 248, 243);
-    width: 1950px;
+    width: 100%;
     height: 837px;
 }
 
@@ -43,8 +46,9 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px 230px;
+    margin: 0px 200px;
     padding-top: 30px;
+    padding-bottom: 0px;
     align-items: center;
 }
 
@@ -88,13 +92,15 @@ ul li a {
 
 .banner {
     background: rgb(255, 248, 243);
-    background-image: url("../images/header_bg.png"), url("../images/developer.png");
+    background-image: url("../images/header_bg.png"),url("../images/developer.png");
     background-repeat: no-repeat;
-    background-position: right bottom, left top;
     display: flex;
     justify-content: space-between;
-    margin: 0px 35px 0px 200px;
-
+    margin: 45px 35px 0px 200px;
+    height: 65vh;
+    gap: 50px;
+    background-position: right 200px bottom -100px , left -20px top -100px ;
+    width: 100%;
 }
 
 /* banner-container styles */
@@ -137,6 +143,11 @@ ul li a {
     margin-left: 15px;
 }
 
+.banner .img img{
+    position: absolute ;
+    right :-10px;
+    top: 150px;
+}
 /* about section styling */
 .about-box {
     width: 1140px;
@@ -146,8 +157,9 @@ ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 130px auto;
+    margin: 250px auto;
     border-radius: 10px;
+    
 
 }
 
